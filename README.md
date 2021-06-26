@@ -1,7 +1,7 @@
 # botany
 
 A new Flutter project.
-
+Note: Use "flutter run  --no-sound-null-safety" in vscode to run flutter application via terminal.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
