@@ -24,14 +24,21 @@ class Login extends StatelessWidget {
                       image: AssetImage('assets/plant.jpg'),
                       fit: BoxFit.fitHeight)),
             ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(primary: Colors.green),
-              onPressed: () {
-                loginAction();
-              },
-              child: Text('Login'),
+            Container(
+                width: 150,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.green,
+                  ),
+                  onPressed: () {
+                    loginAction();
+                  },
+                  child: Text('Login'),
+                )),
+            Text(
+              "Login to continue",
+              style: TextStyle(fontSize: 20),
             ),
-            Text("Login to continue"),
           ],
         ));
   }

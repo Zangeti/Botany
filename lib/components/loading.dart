@@ -14,7 +14,7 @@ class _LoadingState extends State<Loading> {
       color: Colors.white,
       child: Center(
         child: SpinKitWave(
-          color: Colors.deepPurple,
+          color: Colors.green,
           size: 50,
         ),
       ),

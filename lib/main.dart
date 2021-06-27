@@ -68,6 +68,7 @@ class _MyAppState extends State<MyApp> {
   String errorMessage = "";
   String name = "";
   String picture = "";
+  String email = "";
 
   @override
   Widget build(BuildContext context) {
@@ -83,6 +84,7 @@ class _MyAppState extends State<MyApp> {
                       name: name,
                       picture: picture,
                       logout: logoutAction,
+                      email: email,
                     )
                   : Login(loginAction, errorMessage),
         ),
@@ -141,6 +143,7 @@ class _MyAppState extends State<MyApp> {
         isLoggedIn = true;
         name = idToken['name'];
         picture = profile['picture'];
+        email = idToken["nickname"];
       });
     } catch (e, s) {
       print('login error: $e - stack: $s');
@@ -193,6 +196,7 @@ class _MyAppState extends State<MyApp> {
         isLoggedIn = true;
         name = idToken['name'];
         picture = profile['picture'];
+        email = idToken['nickname'];
       });
     } catch (e, s) {
       print('error on refresh token: $e - stack: $s');
