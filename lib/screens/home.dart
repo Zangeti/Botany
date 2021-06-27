@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     List<Widget> _widgetOptions = <Widget>[
       Blog(),
-      Profile(logout, name, picture, email),
+      Encyclopedia(),
       Profile(logout, name, picture, email),
       Profile(logout, name, picture, email),
     ];
@@ -137,7 +137,7 @@ class _HomeState extends State<Home> {
               icon: Icon(
                 Icons.library_books,
               ),
-              label: 'Reference',
+              label: 'Guide',
             ),
             BottomNavigationBarItem(
               backgroundColor: Colors.green,
