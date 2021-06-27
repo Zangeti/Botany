@@ -133,16 +133,16 @@ class _HomeState extends State<Home> {
             BottomNavigationBarItem(
               backgroundColor: Colors.green,
               icon: Icon(
-                Icons.tv,
+                Icons.library_books,
               ),
-              label: 'Studio',
+              label: 'Reference',
             ),
             BottomNavigationBarItem(
               backgroundColor: Colors.green,
               icon: Icon(
-                Icons.language,
+                Icons.shop,
               ),
-              label: 'Explore',
+              label: 'Shop',
             ),
             BottomNavigationBarItem(
               backgroundColor: Colors.green,
