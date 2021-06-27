@@ -1,5 +1,6 @@
 import 'package:botany/authentication/profile.dart';
 import 'package:botany/screens/blog.dart';
+import 'package:botany/screens/encyclopedia.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -48,9 +49,10 @@ class _HomeState extends State<Home> {
           // automaticallyImplyLeading: false,
           leading: Container(
               child: IconButton(
-            icon: Icon(Icons.book_rounded),
+            icon: Icon(Icons.book_rounded, color: Colors.green),
             onPressed: () {
-              // Navigator.push(context, route)
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Encyclopedia()));
             },
           )),
           title: Text(
